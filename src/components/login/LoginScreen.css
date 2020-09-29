@@ -1,0 +1,19 @@
+.login-screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-screen > form {
+  padding: 2em;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+
+.login-screen > form > * + *{
+  margin-top: 2em;
+} 
+
