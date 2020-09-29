@@ -6,7 +6,6 @@ import { HeroCard } from './HeroCard';
 import './HeroList.css';
 
 export const HeroList = ({ publisher }) => {
-  console.log('Me volvi a renderizar - HeroList')
   const heroes = useMemo(() => getHeroByPublisher(publisher), [publisher]);
 
   const history = useHistory();

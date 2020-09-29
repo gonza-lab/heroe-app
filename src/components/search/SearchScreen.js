@@ -5,6 +5,8 @@ import { getHerosByName } from '../../selectors/getHerosByName';
 import { HeroCard } from '../heroes/HeroCard';
 import { Searcher } from './Searcher';
 
+import './SearchScreen.css';
+
 export const SearchScreen = () => {
   const history = useHistory();
   const location = useLocation();
@@ -19,7 +21,7 @@ export const SearchScreen = () => {
   };
 
   return (
-    <div>
+    <div className="search-screen">
       <Searcher handleChange={handleChange} handleSearch={handleSearch} />
       <div className="hero-list animate__animated animate__fadeIn">
         {heros.map((heroe) => (
