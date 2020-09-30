@@ -1,4 +1,9 @@
+Este proyecto fue hecho para poner en practica mis habildiades de react y jest. Tambien aplique react-router. La parte del login no es funcional, simplemente esta para aplicar rutas privadas y publicas.
+
+- [Preview](https://gonza-lab.github.io/heroe-app/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
