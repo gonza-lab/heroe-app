@@ -11,22 +11,20 @@ export const AppRouter = () => {
 
   return (
     <Router>
-      <>
-        <Switch>
-          <PublicRoute
-            exact
-            isAuthenticated={user.logged}
-            path="/login"
-            component={LoginScreen}
-          />
+      <Switch>
+        <PublicRoute
+          exact
+          isAuthenticated={user.logged}
+          path="/login"
+          component={LoginScreen}
+        />
 
-          <PrivateRoute
-            isAuthenticated={user.logged}
-            path="/"
-            component={DashboardRoutes}
-          />
-        </Switch>
-      </>
+        <PrivateRoute
+          isAuthenticated={user.logged}
+          path="/"
+          component={DashboardRoutes}
+        />
+      </Switch>
     </Router>
   );
 };
